@@ -12,7 +12,7 @@ Link to the video: (paste link)
 The repo also consists of the PDF in the required naming scheme. Please find <ins>SegfaultSurvivors_SrikarTandulwadikar_Jazzee2025_Document</ins> among the project files to access our project's document. 
 
 ## Regarding the MLP:
-The video link attached above consists of the demonstration of Lexablys's MLP as well. 
+The video link attached above consists of the demonstration of Lexably's MLP as well. 
 
 
 
