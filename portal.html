@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexably | Portal Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="portal-body">
+    <div class="portal-container">
+        <p class="notice">MVP-only. Click Founder Portal to proceed</p>
+        <div class="buttons-wrapper">
+            <button id="founder-btn" class="portal-button primary">Enter Founders Portal</button>
+            <button id="hr-btn" class="portal-button secondary">Enter HR Portal</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('founder-btn').addEventListener('click', () => {
+            window.location.href = 'onboarding.html';
+        });
+        document.getElementById('hr-btn').addEventListener('click', () => {
+            alert('HR Portal not available in MVP.');
+        });
+    </script>
+</body>
+</html>

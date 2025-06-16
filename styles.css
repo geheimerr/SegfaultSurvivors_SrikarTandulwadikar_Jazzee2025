@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --red: #e63946;
+    --blue: #1d3557;
+    --light-blue: #a8dadc;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-body {
+    background: #f1f5fb;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+}
+
+/* retain gradient for other pages if needed */
+body:not(.login-body):not(.portal-body) {
+    background: linear-gradient(135deg, var(--blue) 30%, var(--red) 100%);
+    color: var(--white);
+}
+
+.login-container {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 56px 72px 48px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 120px;
+    margin: 20px 0 20px;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input {
+    padding: 14px 16px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 2px rgba(29,53,87,0.2);
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #c92c3a;
+}
+
+/* ---------------- Loading Page Styles ---------------- */
+.loading-body {
+    background: #f1f5fb;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+}
+
+.loading-container {
+    text-align: center;
+}
+
+.loading-title {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.pulse-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.pulse {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--pulse-color);
+    animation: pulse 1.2s infinite ease-in-out;
+    animation-delay: var(--delay);
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.4); opacity: 1; }
+}
+
+.progress-wrapper {
+    width: 260px;
+    height: 8px;
+    background: #e0e4ec;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--red), var(--light-blue));
+    animation: load 5s linear forwards;
+}
+
+@keyframes load {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0%); }
+}
+
+
+.dashboard-body {
+    background: #f1f5fb;
+    padding: 40px 20px;
+    color: var(--blue);
+}
+
+.dashboard-container {
+    margin: 24px auto 0;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    padding: 24px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    color: var(--blue);
+}
+
+.card-title {
+    color: var(--blue);
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card p, .card li {
+    font-size: 0.95rem;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+
+.insert-section {
+    text-align: center;
+    background: var(--white);
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.insert-section.compact { padding: 20px; }
+
+
+.insert-btn {
+    padding: 14px 28px;
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.insert-btn:hover {background:#c92c3a;}
+
+.progress-bar-mini {
+    display: inline-block;
+    width: 80px;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--red), var(--light-blue));
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.insert-text {
+    color: #000;
+    margin-top: 16px;
+}
+
+
+.dashboard-body.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 260px;
+    background: var(--white);
+    border-right: 1px solid #dcdfe6;
+    padding: 24px 16px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.nav-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.95rem;
+}
+
+.nav-btn {
+    color: #000;
+
+    width: 100%;
+    text-align: left;
+    background: var(--white);
+    border: 1px solid #000000;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+}
+.nav-btn:hover {background:#f2f2f2;}
+
+.nav-list .desc {
+    display: block;
+    color: #68748b;
+    font-size: 0.76rem;
+    margin-left: 24px;
+}
+
+.dashboard-main {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Header for Dashboard */
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--white);
+    padding: 12px 24px;
+    border-bottom: 1px solid #dcdfe6;
+}
+
+.header-logo {
+    width: 128px;
+    height: auto;
+}
+
+.dashboard-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+
+.portal-body {
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 80%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+}
+
+.portal-container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+.notice {
+    font-weight: 600;
+    color: var(--red);
+    margin-bottom: 40px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.portal-button {
+    padding: 24px 32px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portal-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.portal-button.primary {
+    background: var(--red);
+    color: var(--white);
+}
+
+.portal-button.secondary {
+    background: var(--light-blue);
+    color: var(--blue);
+}

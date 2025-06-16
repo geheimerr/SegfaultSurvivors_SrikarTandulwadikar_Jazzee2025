@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexably | Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body layout">
+        <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <ul class="nav-list">
+            <li class="nav-item"><button class="nav-btn">🏠 Dashboard</button><span class="desc">Information at a glance about your company</span></li>
+            <li class="nav-item"><button class="nav-btn">🏢 Company Profile</button><span class="desc">Detailed business and employee details</span></li>
+            <li class="nav-item"><button class="nav-btn">🧾 Compliance Center</button><span class="desc">Upcoming form filings, ESIC, TDS, etc.</span></li>
+            <li class="nav-item"><button class="nav-btn">📊 Reports & Analytics</button><span class="desc">Filing history, penalties avoided</span></li>
+            <li class="nav-item"><button class="nav-btn">🛠️ Integrations</button><span class="desc">Workflows for other tools like Tally to work with Lexably</span></li>
+            <li class="nav-item"><button class="nav-btn">⚙️ Settings</button><span class="desc">Notification preferences, Access control for admin, HR, CA</span></li>
+            <li class="nav-item"><button class="nav-btn">❓ Help & Support</button><span class="desc">Chat with a compliance expert, raise a ticket</span></li>
+            <li class="nav-item"><button class="nav-btn">📥 Invoices & Billing</button><span class="desc">Info about your Lexably Billing</span></li>
+        </ul>
+    </nav>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard-main" style="margin-top:10px;">
+        <header class="dashboard-header">
+            <img src="assets/logo.png" alt="Lexably Logo" class="header-logo">
+            <h1 class="dashboard-heading">Founder's Dashboard</h1>
+        </header>
+        <div class="dashboard-container">
+        <div class="card">
+            <h3 class="card-title">Compliance Health Score: <span style="font-weight:700;">92/100</span></h3>
+            <p><span class="progress-bar-mini"></span> Excellent</p>
+            <p>3 items need attention this week</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">This Month's Overview</h3>
+            <ul class="list">
+                <li>GST Filed: ✅ GSTR-1 (Auto)</li>
+                <li>Pending: ⏳ GSTR-3B (Due: 20th)</li>
+                <li>Payroll: ✅ PF/ESI (Auto-processed)</li>
+                <li>Alerts: ⚠️ Trade License renewal</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Financial Impact</h3>
+            <ul class="list">
+                <li>Compliance Cost Saved: ₹45,000/month</li>
+                <li>Penalty Risk Avoided: ₹2,15,000</li>
+                <li>Time Saved: 28 hours/month</li>
+            </ul>
+        </div>
+
+        <div class="insert-section compact">
+            <button class="insert-btn">Insert</button>
+            <p class="insert-text">Insert any reports/forms/files that you deem necessary to your law compliance. The more Lexably learns about your business through such reports, the smarter it's recommendations and compliance help gets.</p>
+        </div>
+            </div>
+    </main>
+</body>
+</html>
