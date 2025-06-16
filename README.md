@@ -6,7 +6,7 @@ Team Segfault Surviors' Submission (Lexably, An AI Powered Taxation and Labour L
 This repo consists of the required PDF and video pertaining to our Gen AI project, Lexably for the Jazzee Hackathon 2025. 
 
 ## Regarding the video:
-Link to the video: (paste link)
+Link to the video: https://youtu.be/wslWau6gU-M
 
 ## Regarding Document Submission:
 The repo also consists of the PDF in the required naming scheme. Please find <ins>SegfaultSurvivors_SrikarTandulwadikar_Jazzee2025_Document</ins> among the project files to access our project's document. 
